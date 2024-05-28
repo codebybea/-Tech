@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+  background: #ebebeb url(./assets/imagens/vectorbg.svg) no-repeat center/cover;
+  width: 100%;
+  height: 50rem;
+}
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif !important; 
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--bs-indigo);
+}
+
+.active-m {
+  color: var(--bs-indigo) !important; 
+}
+
+.nav-item a {
+  color: #fff;
+}
+
+.navbar-expand-xl .navbar-collapse {
+  justify-content: end;
+}
+
+.headline p {
+  text-align: left;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 156px;
+  height: 35px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.img-product img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* animacao produto */
+.img-product {
+  height: 35vh;
+  position: relative;
+}
+
+.img-product-animation {
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.card-img-top {
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
